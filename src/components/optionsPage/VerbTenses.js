@@ -6,24 +6,19 @@ const VerbTenses = props => {
     <div>
       <form>
         <label>
-          <input
-            type="radio"
-            name="Present"
-            value="Present"
-            onChange={props.setTenses}
-          />
+          <button type="checkbox" value="Present" onClick={props.setTenses} />
           Present (yo hablo)
         </label>
         <label>
-          <input type="radio" value="Preterite" onChange={props.setTenses} />
+          <input type="radio" value="Preterite" onClick={props.setTenses} />
           Preterite (yo hablé)
         </label>
         <label>
-          <input type="radio" />
+          <input type="radio" value="Imperfect" onClick={props.setTenses} />
           Imperfect (yo hablaba)
         </label>
         <label>
-          <input type="radio" />
+          <input type="radio" value="Conditional" onClick={props.setTenses} />
           Conditional (yo hablaría)
         </label>
         <label>

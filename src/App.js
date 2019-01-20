@@ -33,13 +33,15 @@ class App extends Component {
   };
 
   setTenses = event => {
-    this.setState({
-      verbTenses: event.target.value
-    });
+    event.preventDefault();
     console.log('Clicked!');
+    this.setState({
+      verbTenses: [...this.state.verbTenses, event.target.value]
+    });
   };
 
   render() {
+    console.log('verb tenses =', this.state.verbTenses);
     return (
       <div>
         <StyledLink to="/">Spanish Conjugator</StyledLink>
@@ -48,11 +50,7 @@ class App extends Component {
             exact
             path="/"
             render={props => (
-              <ConjugatorContainer
-                {...props}
-                setTenses={this.setTenses}
-                data={this.state.data}
-              />
+              <ConjugatorContainer {...props} data={this.state.data} />
             )}
           />
         </div>
@@ -60,7 +58,11 @@ class App extends Component {
           <Route
             path="/options"
             render={props => (
-              <OptionsContainer {...props} filterData={this.filterData} />
+              <OptionsContainer
+                {...props}
+                filterData={this.filterData}
+                setTenses={this.setTenses}
+              />
             )}
           />
         </div>
