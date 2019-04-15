@@ -5,26 +5,57 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800');
 @import url('https://fonts.googleapis.com/css?family=Saira');
 
+html {
+    font-size: 62.5%;
+    background-color: @backdrop;
+}
 
 header {
     max-width: 1000px;
     width: 100%;
     margin: 0 auto;
     nav {
-        .flex(center, center);
+        .flex(space-evenly, center);
         font-family: 'Open Sans';
-        margin-bottom: 20px;
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+
+        a {
+            margin-top: .2rem;
+            text-decoration: none;
+            color: grey;
+        }
     }
     h1 {
         .flex(center, center);
         .saira;
+        font-size: 2.5rem;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
     }
+    
 }
 
 .container {
     margin: 0 auto;
     max-width: 1000px;
     width: 100%;
-    .flex(center, center);
+    background-color: white;
+    .topcontent {
+        .imgcontain1 {
+            height: 300px;
+            
+            img {
+                max-width: 1000px;
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+            }
+        }
+        
+        h2 {
+            font-size: 2.0rem;
+        }
+    }
 }
 
