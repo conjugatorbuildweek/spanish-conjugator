@@ -1,0 +1,30 @@
+@import "reset";
+@import "mixins";
+@import "variables";
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800');
+@import url('https://fonts.googleapis.com/css?family=Saira');
+
+
+header {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    nav {
+        .flex(center, center);
+        font-family: 'Open Sans';
+        margin-bottom: 20px;
+    }
+    h1 {
+        .flex(center, center);
+        .saira;
+    }
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 100%;
+    .flex(center, center);
+}
+
