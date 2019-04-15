@@ -152,7 +152,7 @@ table {
 }
 html {
   font-size: 62.5%;
-  background-color: #f6f9fc;
+  background-color: #000a1a;
 }
 header {
   max-width: 1000px;
@@ -170,7 +170,7 @@ header nav {
 header nav a {
   margin-top: 0.2rem;
   text-decoration: none;
-  color: grey;
+  color: #80b0ff;
 }
 header h1 {
   display: flex;
@@ -179,25 +179,148 @@ header h1 {
   font-family: 'Saira', cursive;
   color: #003893;
   font-weight: 700;
+  color: #80b0ff;
   font-size: 2.5rem;
   padding-top: 1rem;
   padding-bottom: 2rem;
 }
-.container {
+.headimg {
   margin: 0 auto;
-  max-width: 1000px;
-  width: 100%;
-  background-color: white;
-}
-.container .topcontent .imgcontain1 {
-  height: 300px;
-}
-.container .topcontent .imgcontain1 img {
+  display: flex;
+  justify-self: center;
+  border-radius: 10px;
   max-width: 1000px;
   width: 100%;
   height: 200px;
   object-fit: cover;
 }
-.container .topcontent h2 {
+.container1 {
+  margin: 1rem auto;
+  max-width: 1000px;
+  border-radius: 10px;
+  width: 100%;
+  margin-top: 2.5rem;
+  padding-top: 2.5rem;
+  background-color: #80b0ff;
+}
+.container1 .topcontent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 2.5rem;
+}
+.container1 .topcontent img {
+  display: none;
+  border-radius: 50px;
+  height: 250px;
+}
+.container1 .topcontent .textcontent {
+  width: 45%;
+}
+.container1 .topcontent .textcontent h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Saira', cursive;
+  color: #003893;
+  font-weight: 700;
   font-size: 2rem;
+  width: 100%;
+}
+.container1 .topcontent .textcontent p {
+  width: 90%;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 1.5;
+  font-family: 'Open Sans';
+  font-size: 1.6rem;
+}
+.container2 {
+  margin: 1rem auto;
+  max-width: 1000px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #b3d0ff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+.container2 .textcontent2 {
+  width: 100%;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+.container2 .textcontent2 h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Saira', cursive;
+  color: #003893;
+  font-weight: 700;
+  font-size: 2rem;
+  width: 100%;
+}
+.container2 .textcontent2 p {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Open Sans';
+  font-size: 1.6rem;
+}
+.container2 button {
+  height: 100px;
+  width: 100px;
+  align-self: center;
+  border-radius: 50%;
+  border: 1px solid #000a1a;
+  font-family: 'Saira', cursive;
+  color: #003893;
+  font-weight: 700;
+  font-size: 1.8rem;
+  background-color: #f6f9fc;
+}
+.container2 button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  color: white;
+  background-color: #000a1a;
+}
+.container3 {
+  margin: 1rem auto;
+  max-width: 1000px;
+  width: 100%;
+  border-radius: 10px;
+  height: 100%;
+  background-color: #80b0ff;
+  padding-bottom: 2.5rem;
+}
+.container3 .bottomcontent {
+  padding-top: 2.5rem;
+}
+.container3 .bottomcontent h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Saira', cursive;
+  color: #003893;
+  font-weight: 700;
+  font-size: 2rem;
+}
+.container3 .bottomcontent p {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Open Sans';
+  font-size: 1.6rem;
 }
