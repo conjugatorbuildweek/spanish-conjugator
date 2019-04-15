@@ -161,7 +161,7 @@ html {
   border-radius: 10px;
   width: 100%;
   height: auto;
-  padding-top: 2.5rem;
+  padding-top: 2rem;
   padding-bottom: 2.5rem;
   background-color: #FEF5EF;
 }
@@ -179,7 +179,6 @@ html {
   margin-bottom: 1rem;
 }
 .bigcontainer header nav a {
-  margin-top: 0.2rem;
   text-decoration: none;
   color: #27447E;
 }
@@ -218,7 +217,6 @@ html {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 2.5rem;
 }
 .bigcontainer .container1 .topcontent img {
   display: none;
@@ -264,7 +262,7 @@ html {
 }
 .bigcontainer .container2 .textcontent2 {
   width: 100%;
-  padding-top: 2.5rem;
+  padding-top: 1rem;
   padding-bottom: 2.5rem;
 }
 .bigcontainer .container2 .textcontent2 h2 {
