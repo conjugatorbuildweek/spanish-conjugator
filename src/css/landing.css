@@ -152,14 +152,25 @@ table {
 }
 html {
   font-size: 62.5%;
-  background-color: #000a1a;
+  background-color: #27447E;
 }
-header {
+.bigcontainer {
+  margin: 0 auto;
+  margin-bottom: 5rem;
+  max-width: 1200px;
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  background-color: #FEF5EF;
+}
+.bigcontainer header {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
 }
-header nav {
+.bigcontainer header nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -167,24 +178,24 @@ header nav {
   font-size: 1.6rem;
   margin-bottom: 1rem;
 }
-header nav a {
+.bigcontainer header nav a {
   margin-top: 0.2rem;
   text-decoration: none;
-  color: #80b0ff;
+  color: #27447E;
 }
-header h1 {
+.bigcontainer header h1 {
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: 'Saira', cursive;
   color: #003893;
   font-weight: 700;
-  color: #80b0ff;
+  color: #FF3241;
   font-size: 2.5rem;
   padding-top: 1rem;
   padding-bottom: 2rem;
 }
-.headimg {
+.bigcontainer .headimg {
   margin: 0 auto;
   display: flex;
   justify-self: center;
@@ -194,31 +205,30 @@ header h1 {
   height: 200px;
   object-fit: cover;
 }
-.container1 {
-  margin: 1rem auto;
+.bigcontainer .container1 {
+  margin: 2rem auto;
   max-width: 1000px;
   border-radius: 10px;
   width: 100%;
-  margin-top: 2.5rem;
   padding-top: 2.5rem;
-  background-color: #80b0ff;
+  background-color: #D6E3F8;
 }
-.container1 .topcontent {
+.bigcontainer .container1 .topcontent {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   margin-top: 2.5rem;
 }
-.container1 .topcontent img {
+.bigcontainer .container1 .topcontent img {
   display: none;
   border-radius: 50px;
   height: 250px;
 }
-.container1 .topcontent .textcontent {
+.bigcontainer .container1 .topcontent .textcontent {
   width: 45%;
 }
-.container1 .topcontent .textcontent h2 {
+.bigcontainer .container1 .topcontent .textcontent h2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -228,7 +238,7 @@ header h1 {
   font-size: 2rem;
   width: 100%;
 }
-.container1 .topcontent .textcontent p {
+.bigcontainer .container1 .topcontent .textcontent p {
   width: 90%;
   padding: 1.5rem;
   display: flex;
@@ -239,12 +249,12 @@ header h1 {
   font-family: 'Open Sans';
   font-size: 1.6rem;
 }
-.container2 {
-  margin: 1rem auto;
+.bigcontainer .container2 {
+  margin: 2rem auto;
   max-width: 1000px;
   width: 100%;
   border-radius: 10px;
-  background-color: #b3d0ff;
+  background-color: #D6E3F8;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -252,12 +262,12 @@ header h1 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
-.container2 .textcontent2 {
+.bigcontainer .container2 .textcontent2 {
   width: 100%;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
-.container2 .textcontent2 h2 {
+.bigcontainer .container2 .textcontent2 h2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -267,7 +277,7 @@ header h1 {
   font-size: 2rem;
   width: 100%;
 }
-.container2 .textcontent2 p {
+.bigcontainer .container2 .textcontent2 p {
   width: 100%;
   padding: 1rem;
   display: flex;
@@ -277,36 +287,36 @@ header h1 {
   font-family: 'Open Sans';
   font-size: 1.6rem;
 }
-.container2 button {
+.bigcontainer .container2 button {
   height: 100px;
   width: 100px;
   align-self: center;
   border-radius: 50%;
-  border: 1px solid #000a1a;
+  border: 1px solid #27447E;
   font-family: 'Saira', cursive;
   color: #003893;
   font-weight: 700;
   font-size: 1.8rem;
-  background-color: #f6f9fc;
+  background-color: #FEF5EF;
 }
-.container2 button:hover {
+.bigcontainer .container2 button:hover {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
   color: white;
-  background-color: #000a1a;
+  background-color: #27447E;
 }
-.container3 {
-  margin: 1rem auto;
+.bigcontainer .container3 {
+  margin: 2rem auto;
   max-width: 1000px;
   width: 100%;
   border-radius: 10px;
   height: 100%;
-  background-color: #80b0ff;
+  background-color: #D6E3F8;
   padding-bottom: 2.5rem;
 }
-.container3 .bottomcontent {
+.bigcontainer .container3 .bottomcontent {
   padding-top: 2.5rem;
 }
-.container3 .bottomcontent h2 {
+.bigcontainer .container3 .bottomcontent h2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -315,7 +325,7 @@ header h1 {
   font-weight: 700;
   font-size: 2rem;
 }
-.container3 .bottomcontent p {
+.bigcontainer .container3 .bottomcontent p {
   width: 100%;
   padding: 1rem;
   display: flex;
