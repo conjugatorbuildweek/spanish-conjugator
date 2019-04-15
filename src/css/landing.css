@@ -152,7 +152,11 @@ table {
 }
 html {
   font-size: 62.5%;
+  height: 100%;
   background-color: #27447E;
+}
+body {
+  height: 100%;
 }
 .bgimage {
   padding-top: 2.5rem;
