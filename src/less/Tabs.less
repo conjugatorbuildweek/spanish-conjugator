@@ -1,0 +1,59 @@
+@import "variables";
+@import "mixins";
+
+.tabs {
+    width: 100%;
+    .tabs-items {
+      width: 100%;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      padding-top: 60px;
+    }
+    .tabs-item {
+      opacity: 0;
+      position: absolute;
+      left: -500px;
+      transition: 1.5s;
+      width: 75%;
+      .tabs-item-title {
+        font-size: 24px;
+        font-weight: bold;
+        padding-bottom: 10px;
+      }
+    }
+    .tabs-item-selected {
+      position: absolute;
+      width: 1200px;
+      left: 400px;
+      opacity:1;
+      transition: 1s;
+    }
+  
+    .tabs-links {
+      display: flex;
+      justify-content: center;
+      background-color: @coralred;
+    }
+  
+    .tabs-link {
+      padding: 20px 25px;
+      font-size: 24px;
+      background-color: @coralred;
+      border-right: 1px solid @newbackdrop;
+      color: @newbackdrop;
+      cursor: pointer;
+      &:hover {
+        background-color: @rosedust;
+      }
+    }
+    .tabs-link-selected {
+      z-index: 2;
+      border-right: 1px solid @coralred;
+      background-color: @newbackdrop;
+      color: black;
+      &:hover {
+        background-color: @lightblue;
+      }
+    }
+  }
