@@ -1,4 +1,8 @@
 // Update with your config settings.
+require('dotenv').config();
+const pg = require('pg');
+
+pg.defaults.ssl = true; // this needs to be false in development, true when using heroku db
 
 module.exports = {
 
@@ -6,7 +10,14 @@ module.exports = {
     client: 'sqlite3',
     connection: {
       filename: './dev.sqlite3'
-    }
+    },
+    migrations: {
+      directory: './database/migrations/test'
+    },
+    seeds: {
+      directory: './database/seeds/test'
+    },
+    useNullAsDefault: true
   },
 
   staging: {
@@ -21,24 +32,26 @@ module.exports = {
       max: 10
     },
     migrations: {
-      tableName: 'knex_migrations'
-    }
+      directory: './database/migrations/test'
+    },
+    seeds: {
+      directory: './database/seeds/test'
+    },
+    useNullAsDefault: true
   },
 
   production: {
-    client: 'postgresql',
-    connection: {
-      database: 'my_db',
-      user:     'username',
-      password: 'password'
-    },
+    client: 'pg',
+    connection: process.env.DATABASE_URL,
     pool: {
       min: 2,
       max: 10
     },
     migrations: {
-      tableName: 'knex_migrations'
+      directory: './database/migrations/production'
+    },
+    seeds: {
+      directory: './database/seeds/production'
     }
   }
-
 };
