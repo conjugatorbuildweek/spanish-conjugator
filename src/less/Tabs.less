@@ -45,7 +45,7 @@
     .tabs-item-selected {
       position: absolute;
       width: 1200px;
-      left: 600px;
+      left: 650px;
       opacity:1;
       transition: .5s;
     }
@@ -66,6 +66,9 @@
       &:hover {
         background-color: @rosedust;
       }
+    }
+    .tabs-link:nth-child(1) {
+      border-left: 1px solid @newbackdrop;
     }
     .tabs-link-selected {
       z-index: 2;

@@ -1,0 +1,32 @@
+header {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    nav {
+        .flex(space-evenly, center);
+        font-family: 'Open Sans';
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+        a {
+            //text-decoration: none;
+            color: @rosedust; //@darkblue;
+        }
+
+        a:hover {
+            color: @darkblue; //@coralred;
+        }
+    }
+    h1 {
+        .flex(center, center);
+        .saira;
+        color: @darkblue;// @coralred;
+        font-size: 2.5rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+
+        @media @mobile {
+            padding-bottom: 1rem;
+        }
+    }
+    
+}
