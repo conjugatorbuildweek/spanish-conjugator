@@ -146,15 +146,23 @@ table {
 }
 .tabs .tabs-item .tabs-item-picture {
   height: 300px;
+  width: 300px;
   padding-right: 5rem;
+  border-radius: 30px;
+  object-fit: cover;
 }
 .tabs .tabs-item .tabs-item-text .tabs-item-title {
   font-size: 2rem;
   font-weight: bold;
-  padding-bottom: 10px;
+  padding-top: 5rem;
+  padding-bottom: 5px;
 }
 .tabs .tabs-item .tabs-item-text .tabs-item-description {
   line-height: 1.5;
+}
+.tabs .tabs-item .tabs-item-text .tabs-item-description a {
+  text-decoration: none;
+  color: #9D5C63;
 }
 .tabs .tabs-item-selected {
   position: absolute;
@@ -166,12 +174,12 @@ table {
 .tabs .tabs-links {
   display: flex;
   justify-content: center;
-  background-color: #FF3241;
+  background-color: #27447E;
 }
 .tabs .tabs-link {
   padding: 20px 25px;
   font-size: 1.6rem;
-  background-color: #FF3241;
+  background-color: #27447E;
   border-right: 1px solid #FEF5EF;
   color: #FEF5EF;
   cursor: pointer;
@@ -181,7 +189,7 @@ table {
 }
 .tabs .tabs-link-selected {
   z-index: 2;
-  border-right: 1px solid #FF3241;
+  border-right: 1px solid #27447E;
   background-color: #FEF5EF;
   color: black;
 }
@@ -215,7 +223,7 @@ table {
 html {
   font-size: 62.5%;
   height: 100%;
-  background-color: #27447E;
+  background-color: #FF3241;
 }
 body {
   height: 100%;
@@ -223,8 +231,8 @@ body {
 .bgimage {
   padding-top: 2.5rem;
   background-image: url("../assets/bgimg2.jpg");
-  height: 100%;
   background-position: center;
+  height: 100%;
   background-size: cover;
 }
 .bigcontainer {
@@ -233,7 +241,7 @@ body {
   max-width: 1200px;
   border-radius: 10px;
   width: 100%;
-  padding-top: 2.5rem;
+  padding-top: 2rem;
   padding-bottom: 10rem;
   background-color: #FEF5EF;
 }
@@ -252,6 +260,9 @@ body {
 }
 .bigcontainer header nav a {
   text-decoration: none;
+  color: #FF3241;
+}
+.bigcontainer header nav a:hover {
   color: #27447E;
 }
 .bigcontainer header h1 {
@@ -259,23 +270,25 @@ body {
   justify-content: center;
   align-items: center;
   font-family: 'Saira', cursive;
-  color: #003893;
-  font-weight: 700;
   color: #FF3241;
+  font-weight: 700;
+  color: #27447E;
   font-size: 2.5rem;
-  padding-top: 1rem;
-  padding-bottom: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 .bigcontainer .tabs .tabs-item .tabs-item-title {
   font-family: 'Open Sans';
 }
 .bigcontainer .tabs .tabs-item .tabs-item-description {
+  display: flex;
+  flex-direction: column;
   font-family: 'Open Sans';
   font-size: 1.5rem;
 }
 .bigcontainer .tabs .tabs-link {
   font-family: 'Saira', cursive;
-  color: #003893;
+  color: #FF3241;
   font-weight: 700;
   color: #FEF5EF;
 }

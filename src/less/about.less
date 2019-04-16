@@ -9,7 +9,7 @@
 html {
     font-size: 62.5%;
     height: 100%;
-    background-color: @darkblue;
+    background-color: @coralred; //@darkblue;
 }
 body {
     height: 100%;
@@ -17,10 +17,9 @@ body {
 .bgimage {
     padding-top: 2.5rem;
     background-image: url("../assets/bgimg2.jpg");
-    height:100%;
     background-position: center;
+    height: 100%;
     background-size: cover;
-
 }
 .bigcontainer {
     margin: 0 auto;
@@ -28,7 +27,7 @@ body {
     max-width: 1200px;
     border-radius: 10px;
     width: 100%;
-    padding-top: 2.5rem;
+    padding-top: 2.0rem;
     padding-bottom: 10rem;
     background-color: @newbackdrop;
 
@@ -44,16 +43,20 @@ body {
             margin-bottom: 1rem;
             a {
                 text-decoration: none;
-                color: @darkblue;
+                color: @coralred; //@darkblue;
+            }
+            a:hover {
+                color: @darkblue;// @coralred;
             }
         }
+    
         h1 {
             .flex(center, center);
             .saira;
-            color: @coralred;
+            color:@darkblue; // @coralred;
             font-size: 2.5rem;
-            padding-top: 1rem;
-            padding-bottom: 2rem;
+            padding-top: 3rem;
+            padding-bottom: 3rem;
         }
         
     }
@@ -63,6 +66,8 @@ body {
                 font-family: 'Open Sans';
             }
             .tabs-item-description {
+                display: flex;
+                flex-direction: column;
                 font-family: 'Open Sans';
                 font-size: 1.5rem;
             }

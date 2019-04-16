@@ -152,18 +152,17 @@ table {
 }
 html {
   font-size: 62.5%;
-  height: 100%;
-  background-color: #27447E;
+  background-color: #FF3241;
 }
 body {
   height: 100%;
 }
 .bgimage {
   padding-top: 2.5rem;
-  background-image: url("../assets/bgimg1.jpg");
-  height: 100%;
+  background-image: url("../assets/bgimg1.png");
   background-position: center;
   background-size: cover;
+  height: 100%;
 }
 .bigcontainer {
   margin: 0 auto;
@@ -191,6 +190,9 @@ body {
 }
 .bigcontainer header nav a {
   text-decoration: none;
+  color: #FF3241;
+}
+.bigcontainer header nav a:hover {
   color: #27447E;
 }
 .bigcontainer header h1 {
@@ -198,12 +200,12 @@ body {
   justify-content: center;
   align-items: center;
   font-family: 'Saira', cursive;
-  color: #003893;
-  font-weight: 700;
   color: #FF3241;
+  font-weight: 700;
+  color: #27447E;
   font-size: 2.5rem;
-  padding-top: 1rem;
-  padding-bottom: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 .bigcontainer .headimg {
   margin: 0 auto;
@@ -220,7 +222,7 @@ body {
   max-width: 1000px;
   border-radius: 10px;
   width: 100%;
-  padding-top: 2.5rem;
+  padding-top: 1rem;
   background-color: #D6E3F8;
 }
 .bigcontainer .container1 .topcontent {
@@ -235,14 +237,14 @@ body {
   height: 250px;
 }
 .bigcontainer .container1 .topcontent .textcontent {
-  width: 45%;
+  width: 60%;
 }
 .bigcontainer .container1 .topcontent .textcontent h2 {
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: 'Saira', cursive;
-  color: #003893;
+  color: #FF3241;
   font-weight: 700;
   font-size: 2rem;
   width: 100%;
@@ -256,7 +258,7 @@ body {
   text-align: center;
   line-height: 1.5;
   font-family: 'Open Sans';
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 .bigcontainer .container2 {
   margin: 2rem auto;
@@ -273,7 +275,7 @@ body {
 }
 .bigcontainer .container2 .textcontent2 {
   width: 100%;
-  padding-top: 1rem;
+  padding-top: 0rem;
   padding-bottom: 2.5rem;
 }
 .bigcontainer .container2 .textcontent2 h2 {
@@ -281,40 +283,45 @@ body {
   justify-content: center;
   align-items: center;
   font-family: 'Saira', cursive;
-  color: #003893;
+  color: #FF3241;
   font-weight: 700;
   font-size: 2rem;
   width: 100%;
 }
 .bigcontainer .container2 .textcontent2 p {
+  line-height: 1.5;
   width: 100%;
-  padding: 1rem;
+  padding: 0rem;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   font-family: 'Open Sans';
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
-.bigcontainer .container2 button {
-  height: 100px;
-  width: 100px;
+.bigcontainer .container2 a {
+  display: flex;
+  height: 120px;
+  width: 120px;
   align-self: center;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
   border-radius: 50%;
-  border: 1px solid #27447E;
+  border: 1px solid #FF3241;
   font-family: 'Saira', cursive;
-  color: #003893;
   font-weight: 700;
+  color: #FF3241;
   font-size: 1.8rem;
   background-color: #FEF5EF;
 }
-.bigcontainer .container2 button:hover {
+.bigcontainer .container2 a:hover {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
   color: white;
-  background-color: #27447E;
+  background-color: #FF3241;
 }
 .bigcontainer .container3 {
-  margin: 2rem auto;
+  margin: 0rem auto;
   max-width: 1000px;
   width: 100%;
   border-radius: 10px;
@@ -323,23 +330,28 @@ body {
   padding-bottom: 2.5rem;
 }
 .bigcontainer .container3 .bottomcontent {
+  display: flex;
+  justify-content: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
   padding-top: 2.5rem;
 }
-.bigcontainer .container3 .bottomcontent h2 {
+.bigcontainer .container3 .bottomcontent .column {
+  width: 32%;
+}
+.bigcontainer .container3 .bottomcontent .column h2 {
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: 'Saira', cursive;
-  color: #003893;
+  color: #FF3241;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
-.bigcontainer .container3 .bottomcontent p {
+.bigcontainer .container3 .bottomcontent .column p {
   width: 100%;
-  padding: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 1.5rem;
+  text-align: center;
   font-family: 'Open Sans';
   font-size: 1.6rem;
 }

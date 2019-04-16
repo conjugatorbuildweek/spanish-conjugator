@@ -7,8 +7,7 @@
 
 html {
     font-size: 62.5%;
-    height: 100%;
-    background-color: @darkblue;
+    background-color: @coralred; // @darkblue;
 }
 body {
     height: 100%;
@@ -16,11 +15,10 @@ body {
 
 .bgimage {
           padding-top:2.5rem;
-          background-image: url("../assets/bgimg1.jpg");
-          height: 100%;
+          background-image: url("../assets/bgimg1.png");
           background-position: center;
           background-size: cover;
-     
+          height: 100%;
 }
 .bigcontainer {
     margin: 0 auto;
@@ -43,16 +41,20 @@ header {
         margin-bottom: 1rem;
         a {
             text-decoration: none;
-            color: @darkblue;
+            color: @coralred; //@darkblue;
+        }
+
+        a:hover {
+            color: @darkblue; //@coralred;
         }
     }
     h1 {
         .flex(center, center);
         .saira;
-        color: @coralred;
+        color: @darkblue;// @coralred;
         font-size: 2.5rem;
-        padding-top: 1rem;
-        padding-bottom: 2rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
     }
     
 }
@@ -73,7 +75,7 @@ header {
     max-width: 1000px;
     border-radius: 10px;
     width: 100%;
-    padding-top: 2.5rem;
+    padding-top: 1.0rem;
     background-color: @lightblue;
     .topcontent {
         .flex(center, center);
@@ -84,7 +86,7 @@ header {
             height: 250px;
         }
         .textcontent {
-            width: 45%;
+            width: 60%;
             h2 {
             .flex(center, center);
             .saira;
@@ -99,7 +101,7 @@ header {
             text-align: center;
             line-height: 1.5;
             font-family: 'Open Sans';
-            font-size: 1.6rem;
+            font-size: 1.8rem;
         }
       }
     }
@@ -120,8 +122,8 @@ header {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
     .textcontent2 {
-        width: 100%;
-        padding-top: 1rem;
+        width:100%;
+        padding-top: 0rem;
         padding-bottom: 2.5rem;
         h2 {
             .flex(center, center);
@@ -129,36 +131,41 @@ header {
             font-size: 2.0rem;
             width: 100%;
         }
-
         p {
+            line-height: 1.5;
             width: 100%;
-            padding: 1rem;
+            padding: 0rem;
             .flex(center, center);
             text-align: center;
             font-family: 'Open Sans';
-            font-size: 1.6rem;
+            font-size: 1.8rem;
         }
     } 
-    button {
-        height: 100px;
-        width: 100px;
+    a   {
+        display: flex;
+        height: 120px;
+        width: 120px;
         align-self: center;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
         border-radius: 50%;
-        border: 1px solid @darkblue;
+        border: 1px solid @coralred; //@darkblue;
         .saira;
+        color: @coralred; //@darkblue;
         font-size: 1.8rem;
         background-color: @newbackdrop;
     }
      
-    button:hover {
+    a:hover {
         box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
         color: white;
-        background-color: @darkblue;
+        background-color: @coralred; //@darkblue;
     }
 }
 
 .container3 {
-    margin: 2rem auto;
+    margin: 0rem auto;
     max-width: 1000px;
     width: 100%;
     border-radius: 10px;
@@ -167,19 +174,26 @@ header {
     padding-bottom: 2.5rem;
 
     .bottomcontent {
+        display: flex;
+        justify-content: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
         padding-top: 2.5rem;
-        h2 {
-            .flex(center, center);
-            .saira;
-            font-size: 2.0rem;
-        }
-        p {
-            width: 100%;
-            padding: 1rem;
-            .flex(center, center);
-            font-family: 'Open Sans';
-            font-size: 1.6rem;
-        }
+        .column {
+            width: 32%;
+            h2 {
+                .flex(center, center);
+                .saira;
+                font-size: 1.8rem;
+            }
+            p {
+                width: 100%;
+                padding: 1.5rem;
+                text-align: center;
+                font-family: 'Open Sans';
+                font-size: 1.6rem;
+            }
+      }
     }
 }
 }
