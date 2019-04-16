@@ -1,0 +1,430 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+header {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+header nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: 'Open Sans';
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+header nav a {
+  color: #9D5C63;
+}
+header nav a:hover {
+  color: #27447E;
+}
+header h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Saira', cursive;
+  color: #FF3241;
+  font-weight: 700;
+  color: #27447E;
+  font-size: 2.5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+@media (max-width: 500px) {
+  header h1 {
+    padding-bottom: 1rem;
+  }
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  padding-bottom: 5rem;
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  background: none;
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v16/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v16/mem5YaGs126MiZpBA-UN7rgOUuhs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'), url(https://fonts.gstatic.com/s/opensans/v16/mem5YaGs126MiZpBA-UN8rsOUuhs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Saira';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Saira Regular'), local('Saira-Regular'), url(https://fonts.gstatic.com/s/saira/v3/memwYa2wxmKQyNknTZY.ttf) format('truetype');
+}
+html {
+  font-size: 62.5%;
+  background-color: #FF3241;
+}
+body {
+  height: 100%;
+}
+.bgimage {
+  padding-top: 2.5rem;
+  background-image: url("../assets/bgimg1.png");
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+.bigcontainer {
+  margin: 0 auto;
+  margin-bottom: 5rem;
+  max-width: 1200px;
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  padding-top: 2rem;
+  padding-bottom: 2.5rem;
+  background-color: #FEF5EF;
+}
+.bigcontainer .headimg {
+  margin: 0 auto;
+  display: flex;
+  justify-self: center;
+  border-radius: 10px;
+  max-width: 1000px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+@media (max-width: 500px) {
+  .bigcontainer .headimg {
+    display: none;
+  }
+}
+.bigcontainer .container1 {
+  margin: 2rem auto;
+  max-width: 1000px;
+  border-radius: 10px;
+  width: 100%;
+  padding-top: 1rem;
+  background-color: #D6E3F8;
+}
+.bigcontainer .container1 .topcontent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.bigcontainer .container1 .topcontent img {
+  display: none;
+  border-radius: 50px;
+  height: 250px;
+}
+.bigcontainer .container1 .topcontent .textcontent {
+  width: 60%;
+}
+.bigcontainer .container1 .topcontent .textcontent h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Saira', cursive;
+  color: #FF3241;
+  font-weight: 700;
+  font-size: 2rem;
+  width: 100%;
+}
+.bigcontainer .container1 .topcontent .textcontent p {
+  width: 90%;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 1.5;
+  font-family: 'Open Sans';
+  font-size: 1.8rem;
+}
+@media (max-width: 500px) {
+  .bigcontainer .container1 .topcontent .textcontent {
+    width: 80%;
+  }
+}
+.bigcontainer .container2 {
+  margin: 2rem auto;
+  max-width: 1000px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #D6E3F8;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+.bigcontainer .container2 .textcontent2 {
+  width: 100%;
+  padding-top: 0rem;
+  padding-bottom: 2.5rem;
+}
+.bigcontainer .container2 .textcontent2 h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Saira', cursive;
+  color: #FF3241;
+  font-weight: 700;
+  font-size: 2rem;
+  width: 100%;
+}
+.bigcontainer .container2 .textcontent2 p {
+  line-height: 1.5;
+  width: 100%;
+  padding: 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Open Sans';
+  font-size: 1.8rem;
+}
+@media (max-width: 500px) {
+  .bigcontainer .container2 .textcontent2 {
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+}
+.bigcontainer .container2 a {
+  display: flex;
+  height: 120px;
+  width: 120px;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 50%;
+  border: 1px solid #FF3241;
+  font-family: 'Saira', cursive;
+  font-weight: 700;
+  color: #FF3241;
+  font-size: 1.8rem;
+  background-color: #FEF5EF;
+}
+.bigcontainer .container2 a:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  color: white;
+  background-color: #FF3241;
+}
+.bigcontainer .container3 {
+  margin: 0rem auto;
+  max-width: 1000px;
+  width: 100%;
+  border-radius: 10px;
+  height: 100%;
+  background-color: #D6E3F8;
+  padding-bottom: 2.5rem;
+}
+.bigcontainer .container3 .bottomcontent {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 2.5rem;
+}
+.bigcontainer .container3 .bottomcontent .column {
+  width: 30%;
+}
+.bigcontainer .container3 .bottomcontent .column h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Saira', cursive;
+  color: #FF3241;
+  font-weight: 700;
+  color: #9D5C63;
+  font-size: 1.8rem;
+}
+.bigcontainer .container3 .bottomcontent .column p {
+  width: 100%;
+  padding-top: 1rem;
+  line-height: 1.5;
+  text-align: center;
+  font-family: 'Open Sans';
+  font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  .bigcontainer .container3 .bottomcontent .column p {
+    width: 98%;
+  }
+}
+@media (max-width: 500px) {
+  .bigcontainer .container3 .bottomcontent .column {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .bigcontainer .container3 .bottomcontent {
+    display: block;
+  }
+}
+.bigcontainer .container3 .bottomcontent .column:nth-child(1) {
+  border-right: 1px groove #27447E;
+}
+@media (max-width: 500px) {
+  .bigcontainer .container3 .bottomcontent .column:nth-child(1) {
+    border-right: none;
+    border-bottom: 1px groove #27447E;
+  }
+}
+.bigcontainer .container3 .bottomcontent .column:nth-child(3) {
+  border-left: 1px groove #27447E;
+}
+@media (max-width: 500px) {
+  .bigcontainer .container3 .bottomcontent .column:nth-child(3) {
+    border-top: 1px groove #27447E;
+    border-left: none;
+  }
+}
+@media (max-width: 500px) {
+  .bigcontainer .container3 {
+    padding-bottom: 1rem;
+  }
+}

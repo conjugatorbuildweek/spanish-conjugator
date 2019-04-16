@@ -1,0 +1,105 @@
+@import "reset";
+@import "mixins";
+@import "variables";
+@import "Tabs";
+@import "header";
+@import "footer";
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800');
+@import url('https://fonts.googleapis.com/css?family=Saira');
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+    background-color: @coralred; //@darkblue;
+}
+body {
+    height: 100%;
+}
+.bgimage {
+    padding-top: 2.5rem;
+    background-image: url("../assets/bgimg2.jpg");
+    background-position: center;
+    height: 100%;
+    background-size: cover;
+}
+.bigcontainer {
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    max-width: 1200px;
+    border-radius: 10px;
+    width: 100%;
+    padding-top: 2.0rem;
+    padding-bottom: 10rem;
+    background-color: @newbackdrop;
+
+    @media @mobile {
+        padding-bottom: 0rem;
+    }
+
+    .tabs { 
+        
+        @media @mobile {
+        width: 100%;
+        }
+        //.tabs-items {
+            //lalala
+        //}
+        .tabs-item {
+            @media @mobile {
+                left: 0px;
+            }
+            .tabs-item-picture {
+                @media @mobile {
+                    padding-left:1rem;
+                    height: 220px;
+                    width: 220px;
+                }
+            }
+            
+            .tabs-item-title {
+                font-family: 'Open Sans';
+                @media @mobile {
+                    padding-top: 2rem;
+                }
+            }
+            .tabs-item-description {
+                display: flex;
+                flex-direction: column;
+                font-family: 'Open Sans';
+                font-size: 1.5rem;
+            }
+                @media @mobile {
+                width: 100%;
+            }
+            .tabs-item-selected {
+                @media @mobile {
+                }
+            }
+        }
+        .tabs-links {
+            @media @mobile {
+                display: flex;
+                justify-content: center;
+            }
+        }
+        .tabs-link {
+            .saira;
+            color: @newbackdrop;
+            @media @mobile {
+                width: 100%;
+                font-size: 1.6rem;
+                padding: 1rem;
+                margin: 0;
+            }
+        }
+        .tabs-link-selected {
+            color: black;
+        }
+  
+
+
+
+    }
+}
+
