@@ -255,6 +255,11 @@ body {
   padding-bottom: 10rem;
   background-color: #FEF5EF;
 }
+@media (max-width: 500px) {
+  .bigcontainer {
+    padding-bottom: 0rem;
+  }
+}
 .bigcontainer header {
   max-width: 1000px;
   width: 100%;
@@ -287,8 +292,36 @@ body {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
+@media (max-width: 500px) {
+  .bigcontainer header h1 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .bigcontainer .tabs {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .bigcontainer .tabs .tabs-item {
+    left: 0px;
+  }
+}
+@media (max-width: 500px) {
+  .bigcontainer .tabs .tabs-item .tabs-item-picture {
+    padding-left: 1rem;
+    height: 220px;
+    width: 220px;
+  }
+}
 .bigcontainer .tabs .tabs-item .tabs-item-title {
   font-family: 'Open Sans';
+}
+@media (max-width: 500px) {
+  .bigcontainer .tabs .tabs-item .tabs-item-title {
+    padding-top: 2rem;
+  }
 }
 .bigcontainer .tabs .tabs-item .tabs-item-description {
   display: flex;
@@ -296,11 +329,30 @@ body {
   font-family: 'Open Sans';
   font-size: 1.5rem;
 }
+@media (max-width: 500px) {
+  .bigcontainer .tabs .tabs-item {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .bigcontainer .tabs .tabs-links {
+    display: flex;
+    justify-content: center;
+  }
+}
 .bigcontainer .tabs .tabs-link {
   font-family: 'Saira', cursive;
   color: #FF3241;
   font-weight: 700;
   color: #FEF5EF;
+}
+@media (max-width: 500px) {
+  .bigcontainer .tabs .tabs-link {
+    width: 100%;
+    font-size: 1.6rem;
+    padding: 1rem;
+    margin: 0;
+  }
 }
 .bigcontainer .tabs .tabs-link-selected {
   color: black;

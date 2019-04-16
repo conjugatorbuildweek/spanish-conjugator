@@ -217,6 +217,11 @@ body {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
+@media (max-width: 500px) {
+  .bigcontainer header h1 {
+    padding-bottom: 1rem;
+  }
+}
 .bigcontainer .headimg {
   margin: 0 auto;
   display: flex;
@@ -226,6 +231,11 @@ body {
   width: 100%;
   height: 200px;
   object-fit: cover;
+}
+@media (max-width: 500px) {
+  .bigcontainer .headimg {
+    display: none;
+  }
 }
 .bigcontainer .container1 {
   margin: 2rem auto;
@@ -270,6 +280,11 @@ body {
   font-family: 'Open Sans';
   font-size: 1.8rem;
 }
+@media (max-width: 500px) {
+  .bigcontainer .container1 .topcontent .textcontent {
+    width: 80%;
+  }
+}
 .bigcontainer .container2 {
   margin: 2rem auto;
   max-width: 1000px;
@@ -309,6 +324,13 @@ body {
   font-family: 'Open Sans';
   font-size: 1.8rem;
 }
+@media (max-width: 500px) {
+  .bigcontainer .container2 .textcontent2 {
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+}
 .bigcontainer .container2 a {
   display: flex;
   height: 120px;
@@ -347,7 +369,7 @@ body {
   padding-top: 2.5rem;
 }
 .bigcontainer .container3 .bottomcontent .column {
-  width: 32%;
+  width: 30%;
 }
 .bigcontainer .container3 .bottomcontent .column h2 {
   display: flex;
@@ -360,8 +382,29 @@ body {
 }
 .bigcontainer .container3 .bottomcontent .column p {
   width: 100%;
-  padding: 1.5rem;
+  padding-top: 1rem;
   text-align: center;
   font-family: 'Open Sans';
   font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  .bigcontainer .container3 .bottomcontent .column p {
+    width: 98%;
+  }
+}
+@media (max-width: 500px) {
+  .bigcontainer .container3 .bottomcontent .column {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .bigcontainer .container3 .bottomcontent {
+    display: block;
+  }
+}
+@media (max-width: 500px) {
+  .bigcontainer .container3 {
+    padding-bottom: 1rem;
+  }
 }
