@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Header from "../Header";
 import Container from "../Verb/Container";
 import Modal from "../Modal/Modal";
+//import '../../css/home.css';
 
 
 
@@ -41,12 +42,17 @@ import Modal from "../Modal/Modal";
         <div className="home-wrapper">
           { this.state.isShowing ? <div onClick={this.closeModalHandler} className="back-drop"></div> : null }
           <Container />
-          <div className="made-with-love" onClick={this.openModalHandler}>Made with <span role="img" aria-label="heart">❤️</span> in <span role="img" aria-label="colombia">🇨🇴</span></div>
+          <div className="login-register">
+            <Link to='/Login'><button>Login</button></Link>
+            <Link to='/Register'><button>Register</button></Link>
+        </div>
+        <div className="made-with-love" onClick={this.openModalHandler}>Made with <span role="img" aria-label="heart">❤️</span> in <span role="img" aria-label="colombia">🇨🇴</span></div>
           <Modal
             show={this.state.isShowing}
             close={this.closeModalHandler} 
           />
         </div>
+        
       </div>
       
   );

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link } from 'react-router-dom';
 import Header from '../Header';
 import Modal from '../Modal/Modal';
+import '../../css/register-form.css';
 
 class RegisterForm extends Component {
     constructor(props) {
@@ -44,7 +45,7 @@ class RegisterForm extends Component {
       const { username, password, email } = this.state;
 
       return (
-        <div className="register">
+        <div className="register-page-container">
         <Header />
         <div className="navbar">
           <Link to='/'>Home</Link>
@@ -52,11 +53,12 @@ class RegisterForm extends Component {
           <Link to='/Login'>Login</Link>
           <Link to='/Register'>Register</Link>
         </div>
-
-        <h2>Create an account</h2>
+        <div className="Register-text"><h2>Create an account</h2></div>
+        
         
         <form className="form" onSubmit={this.formSubmit}>
           <input
+            className="user"
             type="text"
             value={username}
             name="username"
@@ -64,6 +66,7 @@ class RegisterForm extends Component {
             onChange={this.handleInputChange}
           />
           <input
+            className="password"
             type="text"
             value={password}
             name="password"
@@ -72,6 +75,7 @@ class RegisterForm extends Component {
           />
           
           <input
+            className="email"
             type="text"
             value={email}
             name="email"
@@ -82,7 +86,8 @@ class RegisterForm extends Component {
             <div className="button">
             <button type="submit">Register</button>
             </div>
-            <Link to='/Login'><button>Already registered? Sign in</button></Link>
+            <div className="registeredtext">Already registered?</div>
+            <Link to='/Login'><button>Sign in here</button></Link>
           </form>
           <div className="made-with-love" onClick={this.openModalHandler}>Made with <span role="img" aria-label="heart">❤️</span> in <span role="img" aria-label="colombia">🇨🇴</span></div>
           <Modal

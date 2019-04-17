@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { Link } from 'react-router-dom';
 import Header from '../Header';
 import Modal from '../Modal/Modal';
+import '../../css/login-form.css';
+
 
 class LoginForm extends Component {
     constructor(props) {
@@ -42,7 +44,7 @@ class LoginForm extends Component {
       const { username, password} = this.state;
 
       return (
-        <div className="login">
+        <div className="login-page-container">
         <Header />
         <div className="navbar">
           <Link to='/'>Home</Link>
@@ -52,14 +54,14 @@ class LoginForm extends Component {
         </div>
           <h2>Login</h2>
         <form className="form" onSubmit={this.formSubmit}>
-          <input
+          <input className="user"
             type="text"
             value={username}
             name="username"
             placeholder="Enter username..."
             onChange={this.handleInputChange}
           />
-          <input
+          <input className="password"
             type="text"
             value={password}
             name="password"
@@ -69,15 +71,15 @@ class LoginForm extends Component {
           <div className="button">
            <button type="submit">Sign in</button>
            </div>
-           <Link to='/Register'><button>New to Conjugator? Register here</button></Link>
+           <div className="registertext">New to Conjugator.io?</div>
+           <Link to='/Register'><button>Register here</button></Link>
         </form>
         <div className="made-with-love" onClick={this.openModalHandler}>Made with <span role="img" aria-label="heart">❤️</span> in <span role="img" aria-label="colombia">🇨🇴</span></div>
           <Modal
             show={this.state.isShowing}
             close={this.closeModalHandler} 
           />
-
-        </div>
+       </div> 
       );
     }
   }
