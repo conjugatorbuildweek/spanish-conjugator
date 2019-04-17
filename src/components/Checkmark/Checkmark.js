@@ -1,5 +1,5 @@
 import React from 'react';
-import './checkmark.css';
+import '../../css/checkmark.css';
 
 const Checkmark = (props) => {
   const hide = 'checkmark-hide';

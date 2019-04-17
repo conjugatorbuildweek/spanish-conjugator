@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import '../../app.css';
+import '../../css/app.css';
 
 import Settings from './Settings/Settings';
 import { spainSpanish, latamSpanish } from '../NumPersonFilters';

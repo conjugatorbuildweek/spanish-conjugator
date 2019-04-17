@@ -1,7 +1,7 @@
 import React from 'react';
 import BlakeProfile from '../../assets/bf-profile.jpeg';
 import NickProfile from '../../assets/no-profile.jpeg';
-import './modal.css';
+import '../../css/modal.css';
 
 const Modal = (props) => {
     return (
