@@ -31,7 +31,13 @@ import Modal from "../Modal/Modal";
       render () {
       return(
       <div className="home">
-          <Header />
+        <Header />
+        <div className="navbar">
+          <Link to='/'>Home</Link>
+          <Link to='/Account'>My Account</Link>
+          <Link to='/Login'>Login</Link>
+          <Link to='/Register'>Register</Link>
+        </div>
         <div className="home-wrapper">
           { this.state.isShowing ? <div onClick={this.closeModalHandler} className="back-drop"></div> : null }
           <Container />
@@ -40,10 +46,6 @@ import Modal from "../Modal/Modal";
             show={this.state.isShowing}
             close={this.closeModalHandler} 
           />
-        </div>
-        <div>
-            <Link to='/Login'><button>Login</button></Link>
-            <Link to='/Register'><button>Register</button></Link>
         </div>
       </div>
       
