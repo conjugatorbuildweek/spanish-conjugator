@@ -46,9 +46,16 @@
 .login-page-container .form .password {
   margin-bottom: 1rem;
 }
+.login-page-container .form .registertext {
+  font-family: 'Open Sans';
+  align-self: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
 .login-page-container .form button {
   margin-bottom: 1rem;
   width: 100%;
+  height: 40px;
   font-size: 1.2rem;
   font-family: 'Open Sans';
   color: white;

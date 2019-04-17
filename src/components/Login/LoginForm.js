@@ -56,7 +56,8 @@ class LoginForm extends Component {
           <div className="button">
            <button type="submit">Sign in</button>
            </div>
-           <Link to='/Register'><button>New to Conjugator? Register here</button></Link>
+           <div className="registertext">New to Conjugator.io?</div>
+           <Link to='/Register'><button>Register here</button></Link>
         </form>
        </div> 
       );
