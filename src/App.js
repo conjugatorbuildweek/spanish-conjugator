@@ -16,8 +16,6 @@ import RegisterForm from "./components/Login/RegisterForm";
         }
       }
 
-      
-
       render () {
       return(
       <div className="app">
