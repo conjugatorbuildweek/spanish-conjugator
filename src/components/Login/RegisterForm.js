@@ -67,7 +67,8 @@ class RegisterForm extends Component {
             <div className="button">
             <button type="submit">Register</button>
             </div>
-            <Link to='/Login'><button>Already registered? <br></br>Sign in</button></Link>
+            <div className="registeredtext">Already registered?</div>
+            <Link to='/Login'><button>Sign in here</button></Link>
           </form>
         </div>
       );

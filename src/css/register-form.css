@@ -49,9 +49,16 @@
 .register-page-container .form .email {
   margin-bottom: 1rem;
 }
+.register-page-container .form .registeredtext {
+  font-family: 'Open Sans';
+  align-self: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
 .register-page-container .form button {
   margin-bottom: 1rem;
   width: 100%;
+  height: 40px;
   font-size: 1.2rem;
   font-family: 'Open Sans';
   color: white;
