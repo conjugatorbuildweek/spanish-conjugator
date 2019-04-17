@@ -34,6 +34,8 @@
 .login-page-container .form input {
   padding: 5px;
   font-family: 'Open Sans';
+  border: none;
+  border-bottom: solid 2px #003893;
   font-weight: 400;
   font-size: 1rem;
 }
