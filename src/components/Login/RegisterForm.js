@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from 'react-router-dom';
+import '../../css/register-form.css';
 
 class RegisterForm extends Component {
     constructor(props) {
@@ -28,16 +29,17 @@ class RegisterForm extends Component {
       const { username, password, email } = this.state;
 
       return (
-      <div>
+      <div className='register-page-container'>
 
         <div className='Login-header'>
-          <h1>Conjugator</h1>
+          <a href="/..">Conjugator.io</a>
         </div>
-
-        <h2>Create an account</h2>
+        <div className="Register-text"><h2>Create an account</h2></div>
+        
         
         <form className="form" onSubmit={this.formSubmit}>
           <input
+            className="user"
             type="text"
             value={username}
             name="username"
@@ -45,6 +47,7 @@ class RegisterForm extends Component {
             onChange={this.handleInputChange}
           />
           <input
+            className="password"
             type="text"
             value={password}
             name="password"
@@ -53,6 +56,7 @@ class RegisterForm extends Component {
           />
           
           <input
+            className="email"
             type="text"
             value={email}
             name="email"
@@ -63,7 +67,7 @@ class RegisterForm extends Component {
             <div className="button">
             <button type="submit">Register</button>
             </div>
-            <Link to='/Login'><button>Already registered? Sign in</button></Link>
+            <Link to='/Login'><button>Already registered? <br></br>Sign in</button></Link>
           </form>
         </div>
       );

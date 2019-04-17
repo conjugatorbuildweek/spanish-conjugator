@@ -4,21 +4,24 @@
 @import 'variables';
 
 
+//@import 'register-form';
+//@import 'login-form';
+
+
 
 body {
   font-family: 'Open Sans';
   background-color: #f6f9fc;
-
   @media @mobile630 {
       width: 95vw;
    }
 }
 
-.app-wrapper {
+.home-wrapper {
   margin-top: 10px;
   padding: 10px 0;
   background-color: #f6f9fc;
- 
+
  @media @desktop630 {
       width: 580px;
       margin: 0 auto;
@@ -28,7 +31,7 @@ body {
      width: 380px;
      margin: 0 auto;
     }
-
+    
  @media @mobile450 {
     width: 95vw;
     }
@@ -63,6 +66,12 @@ body {
   }
 
 }
+
+/* temp fix for styling issue to bring up with Nick*/
+// .home-wrapper {
+//     width: 30%;
+//     margin: 0 auto;
+// }
 
 /* Verb streak styles */
 
@@ -171,6 +180,35 @@ body {
   z-index: 0;
   bottom: 0;
   left: 15%;
+}
+
+/* Login/Register Button Styles */
+
+.home {
+  .login-register {
+    display: flex;
+    justify-content: center;
+    button {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        width: 100px;
+        font-size: 1.2rem;
+        font-family: 'Open Sans';
+        color: white;
+        background-color: @darkblue;
+
+        &:hover {
+            background-color: white;
+            color: @darkblue;
+        }
+    }
+    button:nth-child(1) {
+      margin-right: 1rem;
+    }
+    button:nth-last-child(1) {
+      margin-left: 1rem;
+    }
+  }
 }
 
 /* Font styles */
