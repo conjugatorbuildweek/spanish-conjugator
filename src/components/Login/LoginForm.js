@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { Link } from 'react-router-dom';
+import '../../css/loginform.css';
+
 
 class LoginForm extends Component {
     constructor(props) {
@@ -27,23 +29,24 @@ class LoginForm extends Component {
       const { username, password} = this.state;
 
       return (
-        <div>
-
+        <div className ="login-page-container">
         <div className='Login-header'>
-            <h1>Conjugator</h1>
+            <h1>Conjugator.io</h1>
         </div>
-
+        <div className="Login-text">
         <h2>Login</h2>
+        </div>
+        
       
         <form className="form" onSubmit={this.formSubmit}>
-          <input
+          <input className="user"
             type="text"
             value={username}
             name="username"
             placeholder="Enter username..."
             onChange={this.handleInputChange}
           />
-          <input
+          <input className="password"
             type="text"
             value={password}
             name="password"
@@ -55,7 +58,7 @@ class LoginForm extends Component {
            </div>
            <Link to='/Register'><button>New to Conjugator? Register here</button></Link>
         </form>
-        </div>
+       </div> 
       );
     }
   }

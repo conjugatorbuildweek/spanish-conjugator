@@ -37,19 +37,19 @@ body {
   background-color: #f6f9fc;
 }
 @media only screen and (min-width: 630px) {
-  .home-wrapper {
+  .app-wrapper {
     width: 580px;
     margin: 0 auto;
   }
 }
 @media only screen and (max-width: 630px) {
-  .home-wrapper {
+  .app-wrapper {
     width: 380px;
     margin: 0 auto;
   }
 }
 @media only screen and (max-width: 450px) {
-  .home-wrapper {
+  .app-wrapper {
     width: 95vw;
   }
 }
@@ -78,6 +78,7 @@ body {
 .header div {
   font-size: 16px;
 }
+/* temp fix for styling issue to bring up with Nick*/
 /* Verb streak styles */
 .verb-streak {
   display: flex;
@@ -168,6 +169,30 @@ body {
   bottom: 0;
   left: 15%;
 }
+/* Login/Register Button Styles */
+.home .login-register {
+  display: flex;
+  justify-content: center;
+}
+.home .login-register button {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 100px;
+  font-size: 1.2rem;
+  font-family: 'Open Sans';
+  color: white;
+  background-color: #003893;
+}
+.home .login-register button:hover {
+  background-color: white;
+  color: #003893;
+}
+.home .login-register button:nth-child(1) {
+  margin-right: 1rem;
+}
+.home .login-register button:nth-last-child(1) {
+  margin-left: 1rem;
+}
 /* Font styles */
 .twelve {
   font-size: 12px;
@@ -236,4 +261,95 @@ body {
   transition: all 1.8s;
   width: 100vw;
   z-index: 1;
+}
+/* Login Screen */
+.login-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.login-page-container .Login-header {
+  width: 100%;
+  height: 90px;
+  padding-top: 0.5rem;
+  text-align: center;
+  font-family: 'Saira', cursive;
+  color: #003893;
+  background-color: white;
+  font-weight: 700;
+}
+.login-page-container .Login-text {
+  padding-top: 3rem;
+  font-family: 'Saira', cursive;
+  color: #003893;
+  font-weight: 700;
+}
+.login-page-container .form {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.login-page-container .form .user {
+  display: block;
+  margin-bottom: 1rem;
+}
+.login-page-container .form .password {
+  margin-bottom: 1rem;
+}
+.login-page-container .form button {
+  margin-bottom: 1rem;
+  width: 100%;
+  font-size: 1.2rem;
+  font-family: 'Open Sans';
+  color: white;
+  background-color: #003893;
+}
+/* Register Screen */
+.register-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.register-page-container .Login-header {
+  width: 100%;
+  height: 90px;
+  padding-top: 0.5rem;
+  text-align: center;
+  font-family: 'Saira', cursive;
+  color: #003893;
+  background-color: white;
+  font-weight: 700;
+}
+.register-page-container .Register-text {
+  padding-top: 3rem;
+  font-family: 'Saira', cursive;
+  color: #003893;
+  font-weight: 700;
+}
+.register-page-container .form {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.register-page-container .form .user {
+  display: block;
+  margin-bottom: 1rem;
+}
+.register-page-container .form .password {
+  margin-bottom: 1rem;
+}
+.register-page-container .form .email {
+  margin-bottom: 1rem;
+}
+.register-page-container .form button {
+  margin-bottom: 1rem;
+  width: 100%;
+  font-size: 1.2rem;
+  font-family: 'Open Sans';
+  color: white;
+  background-color: #003893;
 }
