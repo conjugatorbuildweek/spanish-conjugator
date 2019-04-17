@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from 'react-router-dom';
-import '../../css/loginform.css';
+import '../../css/login-form.css';
 
 
 class LoginForm extends Component {
@@ -31,7 +31,7 @@ class LoginForm extends Component {
       return (
         <div className ="login-page-container">
         <div className='Login-header'>
-            <h1>Conjugator.io</h1>
+            <a href="/..">Conjugator.io</a>
         </div>
         <div className="Login-text">
         <h2>Login</h2>

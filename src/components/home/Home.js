@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Header from "../Header";
 import Container from "../Verb/Container";
 import Modal from "../Modal/Modal";
-import '../../css/home.css';
+//import '../../css/home.css';
 
 
 

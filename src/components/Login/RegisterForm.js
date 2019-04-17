@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from 'react-router-dom';
-import '../../css/registerform.css';
+import '../../css/register-form.css';
 
 class RegisterForm extends Component {
     constructor(props) {
@@ -32,7 +32,7 @@ class RegisterForm extends Component {
       <div className='register-page-container'>
 
         <div className='Login-header'>
-          <h1>Conjugator.io</h1>
+          <a href="/..">Conjugator.io</a>
         </div>
         <div className="Register-text"><h2>Create an account</h2></div>
         
