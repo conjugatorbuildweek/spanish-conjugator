@@ -37,19 +37,19 @@ body {
   background-color: #f6f9fc;
 }
 @media only screen and (min-width: 630px) {
-  .app-wrapper {
+  .home-wrapper {
     width: 580px;
     margin: 0 auto;
   }
 }
 @media only screen and (max-width: 630px) {
-  .app-wrapper {
+  .home-wrapper {
     width: 380px;
     margin: 0 auto;
   }
 }
 @media only screen and (max-width: 450px) {
-  .app-wrapper {
+  .home-wrapper {
     width: 95vw;
   }
 }

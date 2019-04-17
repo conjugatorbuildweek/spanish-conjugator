@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 
-import Header from "./components/Header";
+import { Route } from 'react-router-dom';
+import Home from "./components/home/Home";
+import LoginForm from "./components/Login/LoginForm";
+import RegisterForm from "./components/Login/RegisterForm";
 
-import Container from "./components/Verb/Container";
-
-import Modal from "./components/Modal/Modal"
 
     class App extends Component {
 
@@ -16,31 +16,15 @@ import Modal from "./components/Modal/Modal"
         }
       }
 
-      openModalHandler = () => {
-        this.setState({
-          isShowing: true
-        });
-      }
-
-      closeModalHandler = () => {
-        this.setState({
-          isShowing: false
-        });
-      }
+      
 
       render () {
       return(
       <div className="app">
-          <Header />
-        <div className="app-wrapper">
-          { this.state.isShowing ? <div onClick={this.closeModalHandler} className="back-drop"></div> : null }
-          <Container />
-          <div className="made-with-love" onClick={this.openModalHandler}>Made with <span role="img" aria-label="heart">❤️</span> in <span role="img" aria-label="colombia">🇨🇴</span></div>
-          <Modal
-					show={this.state.isShowing}
-					close={this.closeModalHandler} 
-          />
-        </div>
+      <Route exact path='/' component={Home} /> 
+      <Route exact path='/Login' component={LoginForm} /> 
+      <Route exact path='/Register' component={RegisterForm} /> 
+          
       </div>
       
   );
