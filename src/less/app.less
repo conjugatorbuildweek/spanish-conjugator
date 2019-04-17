@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800');
+@import url('https://fonts.googleapis.com/css?family=Saira');
+
+@import 'variables';
+
+
+
+body {
+  font-family: 'Open Sans';
+  background-color: #f6f9fc;
+
+  @media @mobile630 {
+      width: 95vw;
+   }
+}
+
+.app-wrapper {
+  margin-top: 10px;
+  padding: 10px 0;
+  background-color: #f6f9fc;
+ 
+ @media @desktop630 {
+      width: 580px;
+      margin: 0 auto;
+    }
+
+ @media @mobile630 {
+     width: 380px;
+     margin: 0 auto;
+    }
+
+ @media @mobile450 {
+    width: 95vw;
+    }
+}
+
+/* Header styles */
+
+.header {
+  text-align: center;
+  background: white;
+  height: 90px;
+  padding-top: 5px;
+
+  @media only screen and (max-width: 390px) {
+    height: 130px;
+    }
+
+  h2 {
+    font-size: 20px;
+    margin: 10px 0;
+    font-weight: 400;
+  }
+
+  span {
+    font-family: 'Saira', cursive;
+    color: @darkblue;
+    font-weight: 700;
+  }
+
+  div {
+    font-size: 16px;
+  }
+
+}
+
+/* Verb streak styles */
+
+.verb-streak {
+  display: flex;
+  justify-content: center;
+}
+
+.current-best-streak {
+  padding: 5px 0; 
+  margin: 5px 10px; 
+  width: 85px;
+  text-align: center;
+}
+
+.streak {
+  font-size: 12px;
+}
+
+.streak-count {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+/* Verb info styles */
+
+.verb-info {
+  background-color: white; 
+  padding: 15px 20px; 
+  border-radius: 20px;
+}
+
+/* Yo, Tu, Nosotros, etc. Styles */
+
+.person-flex {
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+  margin-bottom: 7.5px;
+  div {
+    font-weight: 800;
+  }
+}
+
+.input-section {
+  display: flex;
+  flex-wrap: nowrap;
+  text-align: center;
+  align-content: flex-end;
+  align-items: flex-end;
+  margin: 7% 0% 2% 0%;
+  position: relative;
+
+  input {
+    padding-left: 10px;
+  }
+}
+
+.input {
+  font-size: 1.2rem;
+  border: none;
+  border-bottom: solid 2px #003893;
+  background-color: white;
+  width: 100%;
+  height: 35px;
+  margin-left: 1%;
+}
+
+.text-under-input {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Accent button styles */
+
+.accent-buttons button {
+  background-color: @darkblue;
+  color: white;
+  border-radius: 4px;
+  margin: 0 2px 6px 2px;
+  font-size: 16px 
+}
+
+/* Helper text styles */
+
+.helper-text {
+  height: 85px;
+  position: relative;
+  padding: 10px 0;
+  div {
+    text-align: center;
+  }
+}
+
+/* Submit button styles */
+
+.submit-button {
+  font-size: 1.2rem;
+  font-family: 'Open Sans';
+  border-radius: 5px;
+  padding: 10px 15px;
+  color: white;
+  background-color: @darkblue;
+  width: 70%;
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  left: 15%;
+}
+
+/* Font styles */
+
+.twelve {
+  font-size: 12px;
+}
+
+.twenty-four {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  span {
+    font-weight: 400;
+    text-transform: none;
+  }
+}
+
+/* Settings styles */
+
+.settings {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 130px;
+}
+
+.two-dropdowns {
+  display: flex;
+}
+
+.settings-text {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.settings-dropdown {
+  margin: 10px;
+}
+
+.settings-buttons-hide {
+  display: none;
+}
+
+.button-options {
+  font-size: 0.8rem;
+  font-family: 'Open Sans';
+  border-radius: 5px;
+  font-weight: 700;
+  height: 30px;
+  margin: 10px;
+  background-color:lightgray;
+  width: 110px;
+  float: left;
+  text-align: center;
+}
+
+/* Hover text styles */
+
+.hover-text { 
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.made-with-love { 
+  cursor: pointer;
+  text-decoration: underline;
+  text-align: center;
+}
+
+/* Modal styles */
+
+.back-drop {
+  background-color: rgba(0, 0, 0, 0.85);
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 1.8s;
+  width: 100vw;
+  z-index: 1;
+}
