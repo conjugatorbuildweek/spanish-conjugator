@@ -1,4 +1,5 @@
-const protected = require('./authent/config/middleware')
+const protected = require('./config/middleware');
+
 
 
 
@@ -74,3 +75,5 @@ server.put('/api/info/:id', (req, res)=>{
     })
     .catch(err => res.status(500).json(err));
 });
+
+module.exports = info

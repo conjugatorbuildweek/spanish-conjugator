@@ -1,7 +1,14 @@
+/*undef: true */
+/*eslint-env es6*/
+/*global require*/
+
 const express = require('express');
 const cors = require('cors');
-const configureRoutes = require('./config/api/routes');
+const configureRoutes = require('./api/config/routes');
+const server = express();
 
+server.use(express.json());
+server.use(cors());
 
 configureRoutes(server);
 
