@@ -1,47 +1,40 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800');
 @import url('https://fonts.googleapis.com/css?family=Saira');
 
-/* Global styles */
+@import 'variables';
+
+
+//@import 'register-form';
+//@import 'login-form';
+
+
 
 body {
   font-family: 'Open Sans';
   background-color: #f6f9fc;
+  @media @mobile630 {
+      width: 95vw;
+   }
 }
 
-.app-wrapper {
+.home-wrapper {
   margin-top: 10px;
   padding: 10px 0;
   background-color: #f6f9fc;
-}
 
-/* Desktop styles */
+ @media @desktop630 {
+      width: 580px;
+      margin: 0 auto;
+    }
 
-@media only screen and (min-width: 630px) {
-  .app-wrapper {
-    width: 580px;
-    margin: 0 auto;
-  }
-}
-
-/* Mobile styles */
-
-@media only screen and (max-width: 630px) {
-  body {
+ @media @mobile630 {
+     width: 380px;
+     margin: 0 auto;
+    }
+    
+ @media @mobile450 {
     width: 95vw;
-  }
-}
-
-@media only screen and (max-width: 630px) {
-  .app-wrapper {
-    width: 380px;
-    margin: 0 auto;
-  }
-}
-
-@media only screen and (max-width: 450px) {
-  .app-wrapper {
-    width: 95vw;
-  }
+    }
 }
 
 /* Header styles */
@@ -51,29 +44,34 @@ body {
   background: white;
   height: 90px;
   padding-top: 5px;
-}
 
-@media only screen and (max-width: 390px) {
-  .header {
+  @media only screen and (max-width: 390px) {
     height: 130px;
+    }
+
+  h2 {
+    font-size: 20px;
+    margin: 10px 0;
+    font-weight: 400;
   }
+
+  span {
+    font-family: 'Saira', cursive;
+    color: @darkblue;
+    font-weight: 700;
+  }
+
+  div {
+    font-size: 16px;
+  }
+
 }
 
-.header h2 {
-  font-size: 20px;
-  margin: 10px 0;
-  font-weight: 400;
-}
-
-.header span {
-  font-family: 'Saira', cursive;
-  color: #003893;
-  font-weight: 700;
-}
-
-.header div {
-  font-size: 16px;
-}
+/* temp fix for styling issue to bring up with Nick*/
+// .home-wrapper {
+//     width: 30%;
+//     margin: 0 auto;
+// }
 
 /* Verb streak styles */
 
@@ -113,10 +111,9 @@ body {
   justify-content: flex-start;
   text-align: center;
   margin-bottom: 7.5px;
-}
-
-.person-flex div {
-  font-weight: 800;
+  div {
+    font-weight: 800;
+  }
 }
 
 .input-section {
@@ -127,10 +124,10 @@ body {
   align-items: flex-end;
   margin: 7% 0% 2% 0%;
   position: relative;
-}
 
-.input-section input {
-  padding-left: 10px;
+  input {
+    padding-left: 10px;
+  }
 }
 
 .input {
@@ -151,7 +148,7 @@ body {
 /* Accent button styles */
 
 .accent-buttons button {
-  background-color: #003893;
+  background-color: @darkblue;
   color: white;
   border-radius: 4px;
   margin: 0 2px 6px 2px;
@@ -164,10 +161,9 @@ body {
   height: 85px;
   position: relative;
   padding: 10px 0;
-}
-
-.helper-text div {
-  text-align: center;
+  div {
+    text-align: center;
+  }
 }
 
 /* Submit button styles */
@@ -178,13 +174,15 @@ body {
   border-radius: 5px;
   padding: 10px 15px;
   color: white;
-  background-color: #003893;
+  background-color: @darkblue;
   width: 70%;
   position: absolute;
   z-index: 0;
   bottom: 0;
   left: 15%;
 }
+
+/* Login/Register Button Styles */
 
 /* Font styles */
 
@@ -196,11 +194,10 @@ body {
   font-size: 24px;
   font-weight: 700;
   text-transform: uppercase;
-}
-
-.twenty-four span {
-  font-weight: 400;
-  text-transform: none;
+  span {
+    font-weight: 400;
+    text-transform: none;
+  }
 }
 
 /* Settings styles */
@@ -247,10 +244,9 @@ body {
 
 .hover-text { 
   cursor: pointer;
-}
-
-.hover-text:hover {
-  text-decoration: underline;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .made-with-love { 
