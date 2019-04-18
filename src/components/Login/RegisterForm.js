@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Header from '../Header';
 import Modal from '../Modal/Modal';
 import '../../css/register-form.css';
+import '../../css/navbar.css';
 
 class RegisterForm extends Component {
     constructor(props) {
@@ -48,11 +49,12 @@ class RegisterForm extends Component {
         <div className="register-page-container">
         <Header />
         <div className="navbar">
-          <Link to='/'>Home</Link>
-          <Link to='/Account'>My Account</Link>
-          <Link to='/Login'>Login</Link>
-          <Link to='/Register'>Register</Link>
+          <Link to='/' className='navlink'>Home</Link>
+          <Link to='/Account' className='navlink'>My Account</Link>
+          <Link to='/Login' className='navlink'>Login</Link>
+          <Link to='/Register' className='navlink'>Register</Link>
         </div>
+        <div className="register-body">
         <div className="Register-text"><h2>Create an account</h2></div>
         
         
@@ -94,6 +96,7 @@ class RegisterForm extends Component {
             show={this.state.isShowing}
             close={this.closeModalHandler} 
           />
+          </div>
         </div>
       );
     }

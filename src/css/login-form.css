@@ -1,11 +1,11 @@
 /* Login Screen */
-.login-page-container {
+.login-body {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.login-page-container .Login-header {
+.login-body .Login-header {
   width: 100%;
   height: 90px;
   padding-top: 0.5rem;
@@ -14,24 +14,24 @@
   background-color: white;
   font-weight: 700;
 }
-.login-page-container .Login-header a {
+.login-body .Login-header a {
   text-decoration: none;
   color: #003893;
   font-size: 2rem;
 }
-.login-page-container .Login-text {
-  padding-top: 3rem;
+.login-body h2 {
+  padding-top: 2rem;
   font-family: 'Saira', cursive;
   color: #003893;
   font-weight: 700;
 }
-.login-page-container .form {
+.login-body .form {
   width: 250px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.login-page-container .form input {
+.login-body .form input {
   padding: 5px;
   font-family: 'Open Sans';
   border: none;
@@ -39,20 +39,20 @@
   font-weight: 400;
   font-size: 1rem;
 }
-.login-page-container .form .user {
+.login-body .form .user {
   display: block;
   margin-bottom: 1rem;
 }
-.login-page-container .form .password {
+.login-body .form .password {
   margin-bottom: 1rem;
 }
-.login-page-container .form .registertext {
+.login-body .form .registertext {
   font-family: 'Open Sans';
   align-self: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.login-page-container .form button {
+.login-body .form button {
   margin-bottom: 1rem;
   width: 100%;
   height: 40px;
