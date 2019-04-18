@@ -170,29 +170,6 @@ body {
   left: 15%;
 }
 /* Login/Register Button Styles */
-.home .login-register {
-  display: flex;
-  justify-content: center;
-}
-.home .login-register button {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  width: 100px;
-  font-size: 1.2rem;
-  font-family: 'Open Sans';
-  color: white;
-  background-color: #003893;
-}
-.home .login-register button:hover {
-  background-color: white;
-  color: #003893;
-}
-.home .login-register button:nth-child(1) {
-  margin-right: 1rem;
-}
-.home .login-register button:nth-last-child(1) {
-  margin-left: 1rem;
-}
 /* Font styles */
 .twelve {
   font-size: 12px;
