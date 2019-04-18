@@ -7,7 +7,7 @@ pg.defaults.ssl = true; // this needs to be false in development, true when usin
 module.exports = {
 
   development: {
-    client: 'sqlite3',
+    client: 'postgresql',
     connection: {
       filename: './dev.sqlite3'
     },
