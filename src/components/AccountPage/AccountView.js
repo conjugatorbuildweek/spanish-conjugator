@@ -39,7 +39,9 @@ class AccountView extends Component {
           <Link to='/Login' className='navlink'>Login</Link>
           <Link to='/Register' className='navlink'>Register</Link>
         </div>
+        <div style={{display: 'flex', justifyContent: 'center'}} >     
         <TargetVerbs />
+        </div>
         <TotalVerbs />
         <Graph />
         <div className="made-with-love" onClick={this.openModalHandler}>Made with <span role="img" aria-label="heart">❤️</span> in <span role="img" aria-label="colombia">🇨🇴</span></div>
