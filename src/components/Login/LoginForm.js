@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link } from 'react-router-dom';
 import Header from '../Header';
 import Modal from '../Modal/Modal';
+import axios from 'axios';
 import '../../css/login-form.css';
 import '../../css/navbar.css';
 
@@ -34,10 +35,22 @@ class LoginForm extends Component {
     formSubmit = e => {
       e.preventDefault();
       
-      this.setState({ username: "", password: ""});
+      const headers = {
+        "username": this.state.username,
+        "password": this.state.password
+      }
+
+      axios
+      .post(`http://localhost:4000/api/login`, headers)
+      .then(response => {
+        console.log('Response', response);
+      })
+      .catch(err => {
+        console.log('Err:', err);
+      });
+      this.setState({ username: "", password: "", email: "", });
       this.props.history.push("/");
     };
-  
 
     render() {
       

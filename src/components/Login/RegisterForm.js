@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link } from 'react-router-dom';
 import Header from '../Header';
 import Modal from '../Modal/Modal';
+import axios from 'axios';
 import '../../css/register-form.css';
 import '../../css/navbar.css';
 
@@ -31,11 +32,26 @@ class RegisterForm extends Component {
 
     handleInputChange = e => {
       this.setState({ [e.target.name]: e.target.value });
+      console.log("State", this.state)
     };
   
+
     formSubmit = e => {
       e.preventDefault();
       
+      const headers = {
+        "username": this.state.username,
+        "password": this.state.password
+      }
+
+      axios
+      .post(`http://localhost:4000/api/register`, headers)
+      .then(response => {
+        console.log('Response', response);
+      })
+      .catch(err => {
+        console.log('Err:', err);
+      });
       this.setState({ username: "", password: "", email: "", });
       this.props.history.push("/");
     };
