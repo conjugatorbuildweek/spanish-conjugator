@@ -2,8 +2,9 @@ import React, { Component } from "react";
 import { Link } from 'react-router-dom';
 import Header from '../Header';
 import Modal from '../Modal/Modal';
+import axios from 'axios';
 import '../../css/login-form.css';
-
+import '../../css/navbar.css';
 
 class LoginForm extends Component {
     constructor(props) {
@@ -34,10 +35,22 @@ class LoginForm extends Component {
     formSubmit = e => {
       e.preventDefault();
       
-      this.setState({ username: "", password: ""});
+      const headers = {
+        "username": this.state.username,
+        "password": this.state.password
+      }
+
+      axios
+      .post(`http://localhost:4000/api/login`, headers)
+      .then(response => {
+        console.log('Response', response);
+      })
+      .catch(err => {
+        console.log('Err:', err);
+      });
+      this.setState({ username: "", password: "", email: "", });
       this.props.history.push("/");
     };
-  
 
     render() {
       
@@ -47,11 +60,12 @@ class LoginForm extends Component {
         <div className="login-page-container">
         <Header />
         <div className="navbar">
-          <Link to='/'>Home</Link>
-          <Link to='/Account'>My Account</Link>
-          <Link to='/Login'>Login</Link>
-          <Link to='/Register'>Register</Link>
+          <Link to='/' className='navlink'>Home</Link>
+          <Link to='/Account' className='navlink'>My Account</Link>
+          <Link to='/Login' className='navlink'>Login</Link>
+          <Link to='/Register' className='navlink'>Register</Link>
         </div>
+        <div className="login-body">
           <h2>Login</h2>
         <form className="form" onSubmit={this.formSubmit}>
           <input className="user"
@@ -79,6 +93,7 @@ class LoginForm extends Component {
             show={this.state.isShowing}
             close={this.closeModalHandler} 
           />
+          </div>
        </div> 
       );
     }

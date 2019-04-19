@@ -2,7 +2,9 @@ import React, { Component } from "react";
 import { Link } from 'react-router-dom';
 import Header from '../Header';
 import Modal from '../Modal/Modal';
+import axios from 'axios';
 import '../../css/register-form.css';
+import '../../css/navbar.css';
 
 class RegisterForm extends Component {
     constructor(props) {
@@ -30,11 +32,26 @@ class RegisterForm extends Component {
 
     handleInputChange = e => {
       this.setState({ [e.target.name]: e.target.value });
+      console.log("State", this.state)
     };
   
+
     formSubmit = e => {
       e.preventDefault();
       
+      const headers = {
+        "username": this.state.username,
+        "password": this.state.password
+      }
+
+      axios
+      .post(`http://localhost:4000/api/register`, headers)
+      .then(response => {
+        console.log('Response', response);
+      })
+      .catch(err => {
+        console.log('Err:', err);
+      });
       this.setState({ username: "", password: "", email: "", });
       this.props.history.push("/");
     };
@@ -48,11 +65,12 @@ class RegisterForm extends Component {
         <div className="register-page-container">
         <Header />
         <div className="navbar">
-          <Link to='/'>Home</Link>
-          <Link to='/Account'>My Account</Link>
-          <Link to='/Login'>Login</Link>
-          <Link to='/Register'>Register</Link>
+          <Link to='/' className='navlink'>Home</Link>
+          <Link to='/Account' className='navlink'>My Account</Link>
+          <Link to='/Login' className='navlink'>Login</Link>
+          <Link to='/Register' className='navlink'>Register</Link>
         </div>
+        <div className="register-body">
         <div className="Register-text"><h2>Create an account</h2></div>
         
         
@@ -94,6 +112,7 @@ class RegisterForm extends Component {
             show={this.state.isShowing}
             close={this.closeModalHandler} 
           />
+          </div>
         </div>
       );
     }
