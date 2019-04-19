@@ -43,8 +43,8 @@ class AccountView extends Component {
         <div className="accountpage" style={{display: 'flex', justifyContent: 'center'}} >     
         <TargetVerbs />
         </div>
-        <TotalVerbs />
-        <Graph />
+        {/* <TotalVerbs /> */}
+        {/* <Graph /> */}
         <div className="made-with-love" onClick={this.openModalHandler}>Made with <span role="img" aria-label="heart">❤️</span> in <span role="img" aria-label="colombia">🇨🇴</span></div>
           <Modal
             show={this.state.isShowing}
