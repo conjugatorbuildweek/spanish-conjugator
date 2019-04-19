@@ -82,10 +82,8 @@ class LoginForm extends Component {
             placeholder="Enter password..."
             onChange={this.handleInputChange}
           />
-          <div className="button">
-           <button type="submit">Sign in</button>
-           </div>
-           <div className="registertext">New to Conjugator.io?</div>
+            <button type="submit">Sign in</button>
+            <div className="registertext">New to Conjugator.io?</div>
            <Link to='/Register'><button>Register here</button></Link>
         </form>
         <div className="made-with-love" onClick={this.openModalHandler}>Made with <span role="img" aria-label="heart">❤️</span> in <span role="img" aria-label="colombia">🇨🇴</span></div>

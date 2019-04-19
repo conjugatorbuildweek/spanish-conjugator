@@ -1,5 +1,5 @@
 import React from 'react';
-import './TargetVerbs.css';
+import '../../css/TargetVerbs.css';
 
 
 class TargetVerbs extends React.Component {
