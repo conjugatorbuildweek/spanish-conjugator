@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Graph from './Graph';
 import TargetVerbs from './TargetVerbs';
 import TotalVerbs from './TotalVerbs';
