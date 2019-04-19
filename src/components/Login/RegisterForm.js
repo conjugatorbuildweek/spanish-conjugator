@@ -84,10 +84,7 @@ class RegisterForm extends Component {
             placeholder="Enter email..."
             onChange={this.handleInputChange}
           />
-          
-            <div className="button">
             <button type="submit">Register</button>
-            </div>
             <div className="registeredtext">Already registered?</div>
             <Link to='/Login'><button>Sign in here</button></Link>
           </form>

@@ -6,6 +6,7 @@ import TotalVerbs from './TotalVerbs';
 import Header from '../Header';
 import Modal from '../Modal/Modal';
 import '../../css/navbar.css';
+import '../../css/accountpage.css'
 
 class AccountView extends Component {
 
@@ -39,7 +40,7 @@ class AccountView extends Component {
           <Link to='/Login' className='navlink'>Login</Link>
           <Link to='/Register' className='navlink'>Register</Link>
         </div>
-        <div style={{display: 'flex', justifyContent: 'center'}} >     
+        <div className="accountpage" style={{display: 'flex', justifyContent: 'center'}} >     
         <TargetVerbs />
         </div>
         <TotalVerbs />
